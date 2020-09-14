@@ -173,7 +173,7 @@ android {
             resValue "string", "CodePushDeploymentKey", '""'
         }
         releaseStaging {
-            resValue "string", "CodePushDeploymentKey", '"nyP2X4UItAoKoHKVEM1qvn3vLwZnHdNEK2g-j"'
+            resValue "string", "CodePushDeploymentKey", '"KJl4qTtNWGpFguGPbtC4kMdK6pMbg4vCSkdDj"'
             // Note: It is a good idea to provide matchingFallbacks for the new buildType you create to prevent build issues
             // Add the following line if not already there
             matchingFallbacks = ['release']
@@ -184,7 +184,7 @@ android {
             // see https://reactnative.dev/docs/signed-apk-android.
             // descomentar linha abaixo caso a release não seja feita via app center
             // signingConfig signingConfigs.release
-            resValue "string", "CodePushDeploymentKey", '"xTBc37tM5rxf_Dltz_VvdGEipxzRLWAIllf7o"'
+            resValue "string", "CodePushDeploymentKey", '"SwCB_dxjx0vPnnWB_RhfOlCmzBAsL5X-4urVt"'
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
