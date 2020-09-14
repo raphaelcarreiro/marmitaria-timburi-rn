@@ -1,4 +1,4 @@
-package com.deliveryclient; // Altere para o seu pacote
+package com.marmitariatimburi; // Altere para o seu pacote
 
 import android.content.Intent;
 import android.os.Bundle;

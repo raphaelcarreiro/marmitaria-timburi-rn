@@ -64,7 +64,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
             >
               {product.formattedPrice}
             </Text>
-            {product.special_price && (
+            {!!product.special_price && (
               <Text color="primary" size={20}>
                 {product.formattedSpecialPrice}
               </Text>

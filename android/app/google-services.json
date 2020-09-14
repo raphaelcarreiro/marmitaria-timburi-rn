@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:372525900715:android:8254c6cba5fc8b36c1a8ee",
         "android_client_info": {
-          "package_name": "com.deliveryclient"
+          "package_name": "com.marmitariatimburi"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "372525900715-q1652hns1718lcmtrohskb51cnnegnmn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.deliveryclient",
+            "package_name": "com.marmitariatimburi",
             "certificate_hash": "1892f68d8ca74fbcf1a17ca3f97b06780b30f9ce"
           }
         }
