@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     position: 'relative',
     alignItems: 'center',
-    marginTop: 30,
+    justifyContent: 'center',
   },
   container: {
     backgroundColor: '#fff',
@@ -68,7 +68,7 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <AppBar title="início" />
-      <ScrollView>
+      <ScrollView contentContainerStyle={{ flex: promotions.length > 0 ? 0 : 1 }}>
         <Header />
         {restaurant && (
           <>

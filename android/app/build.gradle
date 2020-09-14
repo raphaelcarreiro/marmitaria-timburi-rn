@@ -136,8 +136,8 @@ android {
         applicationId "com.marmitariatimburi"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 8
-        versionName "1.7"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
     }
     splits {
