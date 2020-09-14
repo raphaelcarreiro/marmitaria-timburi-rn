@@ -41,6 +41,10 @@ const Drawer: React.FC<DrawerContentComponentProps> = props => {
   function handleLogout(): void {
     logout().then(() => {
       app.setRedirect(null);
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'Home' }],
+      });
     });
   }
 

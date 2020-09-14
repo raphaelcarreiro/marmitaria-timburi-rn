@@ -43,13 +43,13 @@ const Login: React.FC<LoginProps> = ({ navigation }) => {
 
   function handleBack() {
     if (!user) {
-      // navigation.navigate('Home');
       navigation.reset({
         index: 0,
         routes: [{ name: 'Home' }],
       });
 
       app.setRedirect(null);
+      navigation.navigate('Home');
       return;
     }
 
