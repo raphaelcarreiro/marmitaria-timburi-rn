@@ -34,7 +34,7 @@ const ProductSimpleAdditionalList: React.FC<AdditionalListProps> = ({ additional
   return (
     <ListItemStyled selected={additional.selected} style={styles.listItem} onPress={() => handleClick(additional.id)}>
       <Typography gutterBottom>{additional.name}</Typography>
-      {additional.price && (
+      {additional.price > 0 && (
         <Typography bold color="primary">
           + {additional.formattedPrice}
         </Typography>
