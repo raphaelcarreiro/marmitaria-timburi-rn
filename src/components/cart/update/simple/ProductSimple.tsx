@@ -163,7 +163,7 @@ const ProductSimple: React.FC = () => {
               >
                 {product.formattedPrice}
               </Text>
-              {product.special_price && (
+              {!!product.special_price && (
                 <Text align="center" color="primary" size={20}>
                   {product.formattedSpecialPrice}
                 </Text>
