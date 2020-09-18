@@ -115,7 +115,7 @@ const ShipmentAddresses: React.FC<ShipmentAddressesProps> = ({
             Taxa de entrega de {address.area_region.formattedTax}
           </Typography>
         )}
-        {restaurant?.configs.tax_mode === 'distance' && address.distance_tax && address.distance_tax > 0 && (
+        {restaurant?.configs.tax_mode === 'distance' && !!address.distance_tax && address.distance_tax > 0 && (
           <Typography variant="caption" style={styles.tax} size={14}>
             Taxa de entrega de {address.formattedDistanceTax}
           </Typography>
