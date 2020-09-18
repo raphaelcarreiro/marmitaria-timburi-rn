@@ -137,7 +137,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
-        versionName "1.1"
+        versionName "1.2"
         multiDexEnabled true
     }
     splits {
@@ -183,7 +183,7 @@ android {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
             // descomentar linha abaixo caso a release não seja feita via app center
-            // signingConfig signingConfigs.release
+            signingConfig signingConfigs.release
             resValue "string", "CodePushDeploymentKey", '"SwCB_dxjx0vPnnWB_RhfOlCmzBAsL5X-4urVt"'
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
