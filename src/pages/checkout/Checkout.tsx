@@ -24,7 +24,6 @@ import { OrderShipment, CreatedOrder } from '../../@types/order';
 import api from '../../services/api';
 import { PaymentMethod } from '../../@types/paymentMethod';
 import Loading from '../../components/loading/Loading';
-import InsideLoading from '../../components/loading/InsideLoading';
 import CheckoutSuccess from './CheckoutSuccess';
 import CheckoutEmptyCart from './CheckoutEmptyCart';
 import CheckoutButtons from './CheckoutButtons';
@@ -37,12 +36,10 @@ import Payment from './steps/payment/Payment';
 import Confirm from './steps/confirm/Confirm';
 import { clearCart } from '../../store/modules/cart/actions';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
-import { CancelTokenSource } from 'axios';
 import Dialog from '../../components/dialog/Dialog';
-import Typography from '../../components/bases/typography/Text';
 import RestaurantClosed from './closed/RestaurantClosed';
 import { useApp } from '../../appContext';
-import { useFocusEffect, useIsFocused } from '@react-navigation/native';
+import { useIsFocused } from '@react-navigation/native';
 
 const styles = StyleSheet.create({
   container: {
@@ -202,8 +199,8 @@ const Checkout: React.FC<CheckoutProps> = ({ navigation }) => {
           );
         else dispatch(setShipmentAddress({} as OrderShipment));
         return;
-      } else if (restaurant?.configs.tax_mode === 'distance') {
-        if (address && address.distance && address.distance <= restaurant?.delivery_max_distance)
+      } else if (restaurant?.delivery_max_distance && address) {
+        if (address.distance && address.distance <= restaurant?.delivery_max_distance)
           dispatch(
             setShipmentAddress({
               ...address,

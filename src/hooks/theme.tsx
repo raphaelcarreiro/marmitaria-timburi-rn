@@ -22,7 +22,7 @@ export function createTheme(primary: string, secondary: string): DefaultTheme {
     secondaryContrast: secondaryContrast,
     error: '#dc3545',
     primaryDark: primaryColor.darken(0.1).hex(),
-    primaryLight: primaryColor.lighten(0.2).hex(),
+    primaryLight: primaryColor.alpha(0.05).rgb().string(),
   };
 }
 
